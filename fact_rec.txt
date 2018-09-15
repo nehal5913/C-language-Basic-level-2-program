@@ -1,0 +1,27 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int factorial(int total, int num) {
+
+    if (num != 1) {
+        return factorial(total * num, num - 1);
+    }
+    return total;
+}
+
+int main() {
+    int num;
+    cin >> num;
+    cout << factorial(num, num - 1) << "\n";
+    return 0;
+}
+
+
+
+roll no. 1800317
+roll code 91032
+dob   27-03-2000
